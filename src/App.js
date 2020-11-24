@@ -82,7 +82,7 @@ class App extends Component {
       case 'confluence':
         this.setState({
           imagePath : process.env.PUBLIC_URL + '/confluence.png',
-          imageLinkTo : 'https://confluence-io.app'
+          imageLinkTo : 'https://confluence-io.web.app/'
         })
         break
       case 'finsta':

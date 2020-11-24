@@ -3,20 +3,21 @@
   align-items: center;
   justify-content: center;
   height: 100vh; 
-  background: rgb(20,54,66);
-  background: linear-gradient(162deg, rgba(20,54,66,0.794292717086834) 43%, rgba(34,196,193,0.861782212885154) 80%);
+  background-color: black;
+  /* background: rgb(20,54,66);
+  background: linear-gradient(162deg, rgba(20,54,66,0.794292717086834) 43%, rgba(34,196,193,0.861782212885154) 80%); */
 }
 
 .container{
   min-height: 690px;
-  max-height: 80px;
   width: 700px;
-  min-width: 300px;
+  min-width: 200px;
   /* background-color: rgb(255, 190, 134, .4); */
-  background-color: rgb(255, 190, 134);
+  /* background-color: rgb(255, 190, 134); */
+  background-color: whitesmoke;
   border-radius: 15px;
-  /* border-style: solid;
-  border-color: #827191; */
+  border-style: solid;
+  border-color: #827191;
   border-width: 8px;
   box-shadow: 10px 10px 52px 0px rgba(0,0,0,0.75);
   
@@ -35,6 +36,7 @@
 
 #tooltip-image{
   max-height: 250px;
+  min-width: 100px;
   margin: 20px;
   transition-timing-function: ease;
   border-radius: 25px;
