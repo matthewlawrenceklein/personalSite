@@ -1,5 +1,6 @@
 import './App.css';
 import { Component } from 'react';
+// import history from './components/history'
 
 class App extends Component {
 
@@ -33,13 +34,13 @@ class App extends Component {
         break;
       case 'choosr':
         this.setState({
-          imagePath : process.env.PUBLIC_URL + '/choosr-retry.png',
+          imagePath : process.env.PUBLIC_URL + '/choosr-retry.jpg',
           imageLinkTo : 'https://choosr-f4ee6.firebaseapp.com/'
         })
         break;
       case 'portfolio':
         this.setState({
-          imagePath : process.env.PUBLIC_URL + '/portfolio.png',
+          imagePath : process.env.PUBLIC_URL + '/portfolio.jpg',
           imageLinkTo : 'http://portfolio.matthewlawrencekle.in'
         })
         break;
@@ -51,13 +52,13 @@ class App extends Component {
         break;
       case 'marshall':
         this.setState({
-          imagePath : process.env.PUBLIC_URL + '/marshall.png',
+          imagePath : process.env.PUBLIC_URL + '/marshall.jpg',
           imageLinkTo : ''
         })
         break;
       case 'goodboy':
         this.setState({
-          imagePath : process.env.PUBLIC_URL + '/goodboy.png',
+          imagePath : process.env.PUBLIC_URL + '/goodboy.jpg',
           imageLinkTo : 'https://goodboyweddings.com'
         })
         break
@@ -75,7 +76,7 @@ class App extends Component {
         break
       case 'bandcamp':
         this.setState({
-          imagePath : process.env.PUBLIC_URL + '/music.JPG',
+          imagePath : process.env.PUBLIC_URL + '/music.jpg',
           imageLinkTo : 'https://saint-something.bandcamp.com/'
         })
         break
@@ -87,7 +88,7 @@ class App extends Component {
         break
       case 'finsta':
         this.setState({
-          imagePath : process.env.PUBLIC_URL + 'finsta.png', 
+          imagePath : process.env.PUBLIC_URL + 'finsta.jpg', 
           imageLinkTo : 'http://finsta.matthewlawrencekle.in'
         })
         break
@@ -97,9 +98,13 @@ class App extends Component {
     }
   }
 
+  handleRightClick = () => {
+   // pushing url to history doesn't redirect, better explore other options  
+  }
+
   render(){
     return (
-      <div className="master">
+      <div className="master" onContextMenu={() => this.handleRightClick()}>
         <div className='container'>
           <p className='text-body'>
               hi everyone! my name is 
