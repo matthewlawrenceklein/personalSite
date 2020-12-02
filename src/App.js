@@ -1,5 +1,8 @@
 import './App.css';
 import { Component } from 'react';
+import 'materialize-css';
+import { Button, Card, Row, Col, Container } from 'react-materialize';
+
 // import history from './components/history'
 
 class App extends Component {
@@ -104,8 +107,8 @@ class App extends Component {
 
   render(){
     return (
-      <div className="master" onContextMenu={() => this.handleRightClick()}>
-        <div className='container'>
+      <Container  xl={6} onContextMenu={() => this.handleRightClick()} className='outside-master'>
+        <Col s={6} m={6} l={6} xl={6} className='inside-container'>
           <p className='text-body'>
               hi everyone! my name is 
               <span onMouseOver={() => this.handleHover('matthew', false)} className='hover-text'> matthew lawrence klein</span>
@@ -151,9 +154,9 @@ class App extends Component {
 
            
 
-        </div>
+        </Col>
 
-      </div>
+      </Container>
     );
   }
 }
